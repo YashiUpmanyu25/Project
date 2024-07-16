@@ -1,0 +1,219 @@
+/*for responsive video and image*/
+#hunger{
+    width:100%;
+    height:auto;
+}
+video{
+    width:100%;
+    height:auto;
+}
+/*navigation using float*/
+#ul1{
+    background-color:white;
+    list-style-type:none;
+    overflow:auto;
+
+}
+.lis{
+    color:black;
+    padding:15px 15px;
+    float:left;
+}
+
+body{
+    background-color:rgb(248, 246, 243);
+
+}
+
+
+/* # is used for id selector*/
+#q1{
+    color:white;
+}
+
+/* . is used for class selector*/
+.blue-text{
+    color:white;
+}
+#h{
+    font-size:30px;
+}
+.underline-h{
+    text-decoration:underline;
+}
+body{
+    background-image:url('blackbg2.jpeg');
+    background-size:900px 900px ;
+    /*if pixels are get faded then we can choose cover then it will cover the whole web page itself without fade*/
+    /*for background image not to be distort we use contain value*/
+    background-size: cover;
+    /*background-size:100% 100% ;*/
+    /*for fixed background */
+    background-attachment: fixed;
+    
+    /*we can write all in one but in this we need to know the order*/
+    background:url('bg1.jpeg') cover ;
+    /*we can use multiple background
+    background-image:url('topleft.jpeg'),url('bottomright.jpg') ;
+    background-position: left top,right bottom;*/
+    
+
+}
+    #border{
+        text-align: center;
+        border-style:double  dotted  solid;
+        border-width: 5px 10px;
+        border-color:whitesmoke;
+        border-radius:10px 30px;/*in px,40%*/
+        /*can be all in one
+        border:5px solid yellow
+        or can only for one side
+        border-top-style:solid*/
+        /*eg.solid,dash,dotted,groove,double,outoset,inset,ridge*/
+        padding: 30px 30px;/*1st for top,bottom and 2nd for left and right
+        can all four be different */
+
+    }
+#adbord{
+    color: antiquewhite;
+    text-align:justify;
+    border:solid;
+    border-radius:30%;
+    margin-top: 50px;
+    margin-right: 300px;
+    margin-left: 450px;
+    /*margin can be negative*/
+    width:200px;
+    margin:auto;/*to do that portion in centre we use auto*/
+    box-shadow:10px 10px 30px 5px white inset,10px 10px 30px 5px white;
+
+}   
+#adbord:hover{
+    opacity:0.2;
+}
+#tabletext{
+    color:white;
+} 
+#ttext{
+    color:white;
+} 
+/*if we want the text at the image top,middle etc then we vertical allign the image*/
+#img{
+    vertical-align:middle;
+}
+#mrq{
+    /*text-decoration: underline,line-through;
+    text-transform:uppercase,capitalize;
+    line-height:1000px; this is for height betweeen lines,text-indent
+    letter-spacing: 10px;
+    word,letter-spacing: 10px;
+    white-space:pre= for reading spaces
+    word-wrap:break-word;*/
+
+}
+#h1{
+    text-shadow: 15px 15px 10px gray;/*1st-horizontally shadow,vertically,blur,color
+    writing-mode:vertical-lr;*/
+}
+/*these are for link decoration*/
+#a{
+    text-decoration:none;
+}
+/*these are pseudo class*/
+a:link{
+    color:rgb(1, 1, 78);
+}
+a:visited{
+    color:black;
+}
+a:hover{
+    color:white;
+}
+a:active{
+    color:aquamarine;
+}
+#h5{
+    font-size: 20px;
+    font-variant:small-caps;
+}
+#bd{
+    cursor:auto;/*all-scroll,cell,col-resize,grab<not-allowed,pointer,progresss,wait,zoom-in,out;*/
+}
+/*css opacity -transparency*/
+#tabletext:hover{
+    border-collapse: separate;
+    border-spacing:10px;
+    opacity:0.3;
+    padding:10px;
+    /*table-layout: fixed;*/
+
+}
+#captable{
+    border: 5px solid whitesmoke;   
+}
+.hover:hover{
+    opacity:0.5;
+}
+/*css filters*/
+#hunger:hover{
+    filter:blur(2px) brightness(50%) contrast(90%) drop-shadow(10px 10px 20px white);/*grayscale,hue-rotate(deg),invert(%),opacity(%),saturate,sepia,*/
+}
+/*when 2 color mixes smoothly called gradient
+1.linear gradient
+2.circle gradient*/
+#div1{
+    height: 200px;
+    border:1px solid gray;
+    /*background-image: linear-gradien(160deg,yellow,red,yellow);*/
+    background-image: radial-gradient(blue 10%,green,yellow);
+}
+#ul{
+    list-style-image:url(arrow.jpeg);
+    /*to minimise the size of arrow image we use online photoshop*/
+    border:1px solid white;
+    list-style-position:inside;/*its used to give some image at the position of point,square brackets  */
+    /*color:brown;*/
+    padding:20px 20px;
+
+}
+/*pseudoclass*/
+input:focus{
+    border:4px solid white;
+}
+/*pseudo-element syntax:
+ selector::pseudo-element*/
+ h5::first-letter{
+    font-size:40px;
+    color:aquamarine;
+ }
+ #h12::before{
+    content:url(ic.jpeg);
+    float:right;/*we can move the image anywhere*/
+    overflow: auto;/*for image to be in container with text*/
+    
+   
+    
+    /*can add any  content like text,image etc*/
+    
+ }
+ 
+ ::selection{
+    color:pink;
+    background:aqua;
+ }
+ #wrapper{
+    text-decoration: none;/*the underline under link will disappear*/
+    background-color: white;
+    padding: 10px 20px;
+    color:black;
+    /*display:inline-block;
+    transform:skew(10deg,10deg),skewX(),skewY(),matrix();*/
+
+ }
+ #wrapper:hover{
+    display:inline-block;
+    transform:/*scaleX()-for only width,scale(1.5,1.8) /*rotate(30deg)*/translate(20px, 20px);/*it only works when display will be block or inline block*/
+    /* these are transformation of button on hover */
+ }
+ 
+ 

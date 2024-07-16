@@ -1,0 +1,188 @@
+/*when we want to make variable which we can use anywhere by their name 
+we have to initialize */
+:root{
+    /*we are here using example of variable function*/
+    --backgrounds-color:green;
+    border-color:aqua;
+}
+#overflow{
+    background-color: aliceblue;
+    border:solid grey;
+    width:500px;
+    height:300px;
+    overflow:auto;/*scroll,hidden prop. must to be resizable*/
+    resize:both;
+}
+#fun{
+    background-color: var(--backgrounds-color);
+    height: 200px;
+    width:calc(100%-500px);/*calc function-------not working*/
+
+}
+#green{    
+    color:green;
+}
+#blue{    
+    color:red;
+}
+#initial{    
+    color:initial;
+}
+#inherit{    
+    color:inherit;
+}
+/*object-fit:contain-do not disturb the aspect ratio  but leave some space blank
+fill-disturb the ratio but do not leave blank space
+cover-it do not dusturb the ratio nor  leave the blank space but it cut the image 
+object fit=object position
+
+
+pseudo class examples
+syntax: selector:pseudo-class{
+}
+*/
+/*li:first-child
+li:nth-child(5)*/
+li:nth-child(2n+1)
+{
+    color:blue;
+}
+p::first-letter{
+    font-size:40px;
+    color:blue;
+ }
+
+/*for layering*/
+
+#d3{
+    
+    
+    width:50%px;
+    
+    padding:30px;
+   /*for to be inline-blocl there should be proper space so that all block can come in line*/
+
+    position:relative;
+
+
+
+}
+#four{
+    width:100px;
+    height:100px;
+    background-color: blueviolet;
+    display: inline-block;
+    position:relative;
+    z-index: 3;/*whose z index will greater it will visible in layering*/
+   
+    
+
+}
+#five {
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    display: inline-block;
+    position:relative;
+    top:50px;
+    left:-50px;
+    z-index: 2;
+}
+
+#six{
+    width:100px;
+    height:100px;
+    background-color:purple;
+    display:inline-block;
+    position:relative;
+    top:100px;
+    left:-100px;
+    z-index: 1;
+}
+
+#d2{
+    
+    
+    width:50%px;
+    border:2px solid blue;
+    padding:30px;
+    /*for to be inline-blocl there should be proper space so that all block can come in line*/
+    
+    position:absolute;
+    
+
+
+
+}
+#one{
+    width:100px;
+    height:100px;
+    background-color: blueviolet;
+   
+    position:relative;
+    top:40px;
+    left:30px;
+
+}
+#two {
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    display: inline-block;
+    position:absolute;
+    top:0px;
+    left:0px
+}
+
+#three{
+    width:100px;
+    height:100px;
+    background-color:purple;
+    display:inline-block;
+    position:fixed;
+    bottom:90px;
+    right:90px;
+   
+}
+#img1{
+    float:right;
+}
+#img2{
+    float:right;
+    clear:right;/*when two images are nearer to each other of float them in right then they come in parallel so if we want them in uppem bottom way we use clear*/
+
+}
+#content{
+    width:70%;
+    background-color:green;
+    height:200px;
+    float:left;
+}
+#sidebar{
+    width:30%;
+    background-color:indianred;
+    height:100px;
+    float:left;
+}
+#footer{
+    background-color:yellowgreen;
+    clear:both;/*we do this because when we shorter the length of sidebar then footer will go where there is space then it goes towards side bar so we use this clear:both so that it will not come there */
+}
+#cover{
+    border:2px solid red;
+    height:200px;
+    width:200px;
+    margin:150px;
+}
+#contents{
+    height:200px;
+    width:200px;
+    background-color:yellowgreen;
+    /*transform: perspective(300px) rotate3d(0,0,50, 20deg);*/
+    transform: perspective(300px) translate3d(0px,0px,-50px);/*x,y,z-axis*/
+}
+/*if we want to split the para into multiple columns*/
+#div5{
+    column-count: 3;
+    column-gap: 80px;
+ }

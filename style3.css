@@ -1,0 +1,99 @@
+/*if we want that when we hover any things then it does not change with jerk ,but it change smoothly like animation ,so we use transition property*/
+#div1{
+    height: 100px;
+    width:100px;
+    background-color: blue;
+    transition-property:width height background-color;/*all */
+    transition-duration:1s;
+    /*transition-delay:400ms;
+    transition-timing-functionn:;
+    in one line=transition:property=width 2s,height 3s duration timing-function delay;
+    */
+    
+}
+
+#div1:hover{
+    width:200px;
+    height:200px;
+    background-color:pink;
+}
+
+/*css animation*/
+@keyframes changes{/*
+    0% ya /from{background-color:red;}
+    100%/ ya to{background-color:yellow;}*/
+
+    /*or we can do this*/
+    0%{background-color:red;}
+    25%{background-color:purple;}
+    50%{width:500px;}
+    75%{background-color:coral;}
+    100%{height:400px;}
+}
+#animation{
+    width: 200px;
+    height:200px;
+    background-color: aqua;
+    animation-name:changes;
+    animation-duration: 5s;
+    /*animation-delay:2s -----after how much time the animation will start*/
+    animation-iteration-count: 3/* or can be infinite*/;
+    animation-direction: reverse;/*alternate,alternate-reverse
+    animation-timing-function: ;*/
+
+
+}
+
+
+/*another example*/
+@keyframes changed{
+    10%{background-color:aqua; border-radius:10%;}
+    20%{background-color:brown; border-radius:20%;}
+    30%{background-color:coral; border-radius:30%;}
+    40%{background-color:olive; border-radius:40%;}
+    50%{background-color:blue; border-radius:50%;}
+    60%{background-color:red; border-radius:40%;}
+    70%{background-color:green; border-radius:30%;}
+    80%{background-color:azure; border-radius:20%;}
+    90%{background-color:aqua; border-radius:10%;}
+    100%{background-color:black; border-radius:10%;}
+   
+}
+#animations{
+    width: 200px;
+    height:200px;
+    background-color: aqua;
+    animation-name:changed;
+    animation-duration:1s;
+    animation-iteration-count: infinite;
+    
+
+}
+/*when we want that when we print our web then the font do not look small and want that at print page the image should not visible then we use @media */
+@media screen{
+    #p1{
+        font-size:20px;
+    }
+}
+@media print{
+    #p1{
+        font-size:30px;
+    }
+    #img1{
+        display:none;
+        
+    }
+
+}
+
+
+#div3{
+    width:70%;
+    float:left;
+    background-color: blueviolet;
+}
+#div4{
+    width:30%;
+    float:left;
+    background-color:crimson;
+}
